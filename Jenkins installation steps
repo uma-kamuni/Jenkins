@@ -1,0 +1,28 @@
+1. LAUNCH EC2 INSTANCE UBUNTU 20.40 with security group (add port 8080)
+
+2. CONNECT THROUGH SSH
+
+3. EXECUTE THE FOLLOWING COMMANDS 
+
+---> sudo apt-get update
+---> sudo apt install openjdk-8-jdk
+---> wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+---> sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+---> sudo apt update
+---> sudo apt install jenkins
+---> sudo systemctl status jenkins
+
+Got to EC2 instance
+
+4. COPY PUBLIC IP ADDRESS OF THAT IENKINS INSTANCE AND OPEN WITH :8080 PORT
+     ______jenkins unlock site opens (copy that /var path) and go to terminal
+     
+5. sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+_______(it generates password copy that and paste in that jenkins unlock site)
+
+6. CLICK INSTALL SUGGESTED PLUGINS
+
+7. CREAT ADMIN USER  {USERNAME, PASSWORD, FULL NAME EMAIL ADDRESS}
+
+
+[----------JENKINS IS READY!----------]
