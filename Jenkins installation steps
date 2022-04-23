@@ -33,6 +33,15 @@ _______(it generates password copy that and paste in that jenkins unlock site)
     5  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
     6  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
     7  sudo apt update
+    8 sudo apt install jenkins
+    9  sudo systemctl status jenkins
+   10  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   11  sudo hostnamectl set-hostname jenkins
+
+    
+    java -version
+    sudo apt install default-jre    - it install jdk 11
+    java -version
     8  sudo apt install jenkins
     9  sudo systemctl status jenkins
    10  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
