@@ -47,3 +47,11 @@ _______(it generates password copy that and paste in that jenkins unlock site)
    10  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
    11  sudo hostnamectl set-hostname jenkins
    12  history
+    12  history
+   13  cd .ssh
+   14  ssh -keygen
+   15  sshcd-keygen
+   16  cd
+   17  ssh-keygen
+   18  cat /home/ubuntu/.ssh/id_rsa.pub
+   19  ssh ubuntu@54.221.73.89
